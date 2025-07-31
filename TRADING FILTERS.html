@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trading Filters Table</title>
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f4f7fc;
+      padding: 20px;
+      margin: 0;
+      color: #2d3436;
+    }
+    h2 {
+      text-align: center;
+      color: #1a3c87;
+      font-size: clamp(1.5rem, 5vw, 2rem);
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    .table-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid #e1e7eb;
+      padding: clamp(10px, 2vw, 14px) clamp(12px, 2vw, 16px);
+      text-align: left;
+      font-size: clamp(13px, 2.5vw, 15px);
+      line-height: 1.5;
+    }
+    th {
+      background-color: #0d6efd;
+      color: #ffffff;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    td {
+      color: #34495e;
+    }
+    tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+    tr:hover {
+      background-color: #e3f2fd;
+      transition: background-color 0.2s ease;
+    }
+    a {
+      color: #0d6efd;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: #004aad;
+    }
+    /* Mobile-specific adjustments */
+    @media (max-width: 768px) {
+      .table-container {
+        padding: 0 10px;
+      }
+      table {
+        min-width: 600px;
+      }
+      th, td {
+        padding: 8px 10px;
+        font-size: 13px;
+      }
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+    @media (max-width: 480px) {
+      th, td {
+        padding: 6px 8px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<h2>Trading Filters</h2>
+<div class="table-container">
+  <table>
+  <tr>
+    <th>S. No.</th>
+    <th>Concept Name</th>
+    <th>Summary</th>
+    <th>About More</th>
+  </tr>
+  <tr><td>1</td><td>Candlestick Wicks</td><td>Read upper/lower wicks for SNR, continuation, strength/weakness</td><td><a href="LEARN MORE/filter1.html">Learn More</a></td></tr>
+  <tr><td>2</td><td>Candle Subtraction</td><td>Merge multiple candles into one to reveal true structure</td><td><a href="LEARN MORE/filter2.html">Learn More</a></td></tr>
+  <tr><td>3</td><td>Double & Triple Candlestick Patterns</td><td>For structure reading. Not direct strategy; confirms continuation or retracement</td><td><a href="LEARN MORE/filter3.html">Learn More</a></td></tr>
+  <tr><td>4</td><td>Candle Sequence (Inc/Dec/Random)</td><td>Reveals party interest via candle positioning & consistency</td><td><a href="LEARN MORE/filter4.html">Learn More</a></td></tr>
+  <tr><td>5</td><td>Momentum</td><td>Judged by candle size, not number</td><td><a href="LEARN MORE/filter5.html#filter5">Learn More</a></td></tr>
+  <tr><td>6</td><td>Master Candle</td><td>Wide candle whose body traps 3 inside candles → range zone</td><td><a href="LEARN MORE/filter5.html#filter6">Learn More</a></td></tr>
+  <tr><td>7</td><td>Control Wick</td><td>Wick shows zone of control if following candles fail to break/close above/below it</td><td><a href="LEARN MORE/filter5.html#filter7">Learn More</a></td></tr>
+  <tr><td>8</td><td>Hammer/Inverted Hammer</td><td>Entry not on next candle. Wait for price to return to hammer body open — use only in continuation setups.</td><td><a href="LEARN MORE/filter8.html">Learn More</a></td></tr>
+  <tr><td>9</td><td>Pin Bar</td><td>Wait for next candle to break pin’s wick → then take continuation trade.</td><td><a href="LEARN MORE/filter9.html">Learn More</a></td></tr>
+  <tr><td>10</td><td>Order Block</td><td>Formed by engulfing at point of exchange (zigzag). Valid only if aligned with Order Flow.</td><td><a href="LEARN MORE/filter10.html">Learn More</a></td></tr>
+  <tr><td>11</td><td>Order Flow</td><td>Defines the true wave structure. Trend continues if buyers keep engulfing sellers. Trend changes only when opposite wave engulfs and not just trendline breaks.</td><td><a href="LEARN MORE/filter11.html">Learn More</a></td></tr>
+  <tr><td>12</td><td>SNR (Support & Resistance)</td><td>Price exchange point; demand/supply battle marker.</td><td><a href="LEARN MORE/filter12.html">Learn More</a></td></tr>
+  <tr><td>13</td><td>RBS/SBR (Flip SNR)</td><td>Broken resistance becomes support and vice-versa; signifies party dominance.</td><td><a href="LEARN MORE/filter13.html">Learn More</a></td></tr>
+  <tr><td>14</td><td>SNR Zone</td><td>Range formed using wick high and body open; gives buffer area.</td><td><a href="LEARN MORE/filter14.html">Learn More</a></td></tr>
+  <tr><td>15</td><td>Single Candlestick SNR (via subtraction)</td><td>Level identified by subtracting engulfing candles into 1 signal candle.</td><td><a href="LEARN MORE/filter15.html">Learn More</a></td></tr>
+  <tr><td>16</td><td>Origin Level Failing</td><td>When reversal from SNR fails on re-test, marks party failure; that level breaks easily.</td><td><a href="LEARN MORE/filter16.html">Learn More</a></td></tr>
+  <tr><td>17</td><td>Gaps or Jump</td><td>Gaps often skip SNRs intentionally; next candle shows continuation intent depending on close.</td><td><a href="LEARN MORE/filter17.html">Learn More</a></td></tr>
+  <tr><td>18</td><td>Jump SNR</td><td>If a gap appears between candles, it likely indicates a hidden SNR that was deliberately skipped.</td><td><a href="LEARN MORE/filter18.html">Learn More</a></td></tr>
+  <tr><td>19</td><td>Strong/Weak SNR</td><td>Strength of SNR judged by body size of incoming candles compared to previous wave (weak/strong).</td><td><a href="LEARN MORE/filter19.html">Learn More</a></td></tr>
+  <tr><td>20</td><td>Swing Structure</td><td>Composed of Drop, Base, Rally → used to define 9 structure types like Rally-Base-Drop, etc.</td><td><a href="LEARN MORE/filter20.html">Learn More</a></td></tr>
+  <tr><td>21</td><td>True Breakout (Trueout)</td><td>Price breaks a level, retraces back to it, and then continues in the breakout direction. Considered strong confirmation.</td><td><a href="LEARN MORE/filter21.html">Learn More</a></td></tr>
+  <tr><td>22</td><td>Fake Breakout (Fakeout)</td><td>Breakout fails either immediately or during retracement. Price does not continue in breakout direction and reverses.</td><td><a href="LEARN MORE/filter22.html">Learn More</a></td></tr>
+  <tr><td>23</td><td>Second Breakout</td><td>Occurs when first breakout fails and market breaks in the opposite direction. Often continues strongly with or without retracement.</td><td><a href="LEARN MORE/filter23.html">Learn More</a></td></tr>
+  <tr><td>24</td><td>LTW (Level Tested by Wick)</td><td>Occurs when price touches a level with only a wick (no strong body), signaling rejection or level confirmation. Can lead to reversal or wick-based continuation without full retracement.</td><td><a href="LEARN MORE/filter24.html">Learn More</a></td></tr>
+  <tr><td>25</td><td>Internal Structure</td><td>Smart Money Concept (SMC) idea — Defines trend using formations like Lower Highs (LH) and Lower Lows (LL), needing failed wave confirmation before LH is validated.</td><td><a href="LEARN MORE/filter25.html">Learn More</a></td></tr>
+  <tr><td>26</td><td>External Structure</td><td>Similar to Internal Structure, used to confirm Lower Lows (LL) or Higher Highs (HH) — structure is validated through failed breakouts and second wave success.</td><td><a href="LEARN MORE/filter26.html">Learn More</a></td></tr>
+  <tr><td>27</td><td>Change of Character (CHoCH)</td><td>Occurs when internal or external structure fails — a key SMC signal that indicates potential trend reversal or momentum shift.</td><td><a href="LEARN MORE/filter27.html">Learn More</a></td></tr>
+  <tr><td>28</td><td>Break of Structure (BOS)</td><td>Market continues trend (order flow) by consistently breaking structure — e.g., buyers engulfing sellers repeatedly across waves.</td><td><a href="LEARN MORE/filter28.html">Learn More</a></td></tr>
+  <tr><td>29</td><td>News Checking</td><td>Used to validate or avoid false signals — simply check major news events on platforms like Investing.com before entering trade.</td><td><a href="LEARN MORE/filter29.html">Learn More</a></td></tr>
+  <tr><td>30</td><td>Validation{Volume}</td><td>When volume matches the size and direction of the candle — signals genuine buying/selling. If breakout or reversal follows validation, the strong party may push continuation.</td><td><a href="LEARN MORE/filter30.html">Learn More</a></td></tr>
+  <tr><td>31</td><td>Anomaly{Volume}</td><td>Opposite of validation — volume doesn't align with candle size. Used to detect weak breakouts and spot reversal setups. Indicates party strength is lacking or deceptive.</td><td><a href="LEARN MORE/filter31.html">Learn More</a></td></tr>
+</table>
+</div>
+
+</body>
+</html>
